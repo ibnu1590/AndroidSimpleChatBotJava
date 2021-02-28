@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements BotReply {
                     Objects.requireNonNull(chatView.getLayoutManager())
                             .scrollToPosition(messageList.size() - 1);
                 } else {
-                    Toast.makeText(MainActivity.this, "Please enter text!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Masukkan pesan", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -109,10 +109,10 @@ public class MainActivity extends AppCompatActivity implements BotReply {
                 chatAdapter.notifyDataSetChanged();
                 Objects.requireNonNull(chatView.getLayoutManager()).scrollToPosition(messageList.size() - 1);
             }else {
-                Toast.makeText(this, "something went wrong", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Ada sesuatu yang salah", Toast.LENGTH_SHORT).show();
             }
         } else {
-            Toast.makeText(this, "failed to connect!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Koneksi gagal!", Toast.LENGTH_SHORT).show();
         }
     }
 }
